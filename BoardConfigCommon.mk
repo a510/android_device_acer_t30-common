@@ -32,6 +32,7 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_CUSTOM_BOOTIMG_MK := device/acer/t30-common/custombootimg.mk
 BOARD_CUSTOM_BOOTIMG := true
+BOARD_CANT_BUILD_RECOVERY_FROM_BOOT_PATCH := true
 
 # Include an expanded selection of fonts
 # TODO: check available system space
@@ -55,7 +56,7 @@ WIFI_DRIVER_FW_PATH_AP      := "/vendor/firmware/fw_bcmdhd_apsta.bin"
 BOARD_LEGACY_NL80211_STA_EVENTS := true
 BOARD_NO_APSME_ATTR := true
 
-TARGET_KERNEL_SOURCE := kernel/acer/t30
+TARGET_KERNEL_SOURCE := kernel/acer/zt30
 
 # Avoid the generation of ldrcc instructions
 NEED_WORKAROUND_CORTEX_A9_745320 := true
